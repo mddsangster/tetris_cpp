@@ -4,7 +4,7 @@
 from setuptools import setup, Extension
 
 package_base = 'tetris_cpp'
-package_version = '0.1'
+package_version = '0.1.3'
 package_summary = ''
 package_author = { 'name': 'Kevin P. Barry', 'email': 'ta0kira@gmail.com' }
 package_license = ''
@@ -12,7 +12,11 @@ package_description = ''
 
 ext_modules = [
     Extension(name = '_tetris_cpp',
-        sources = ['board_python.cpp'],
+        sources = [
+            'board_python.cpp',
+            'tetris_cow.cpp',
+            'row_pool.cpp'
+        ],
         include_dirs = ['.'],
         extra_compile_args=['-std=c++11'])]
 
