@@ -4,7 +4,7 @@
 from setuptools import setup, Extension
 
 package_base = 'tetris_cpp'
-package_version = '0.1.3'
+package_version = '0.1.4'
 package_summary = ''
 package_author = { 'name': 'Kevin P. Barry', 'email': 'ta0kira@gmail.com' }
 package_license = ''
@@ -18,7 +18,7 @@ ext_modules = [
             'row_pool.cpp'
         ],
         include_dirs = ['.'],
-        extra_compile_args=['-std=c++11'])]
+        extra_compile_args=['-std=c++11 -mmacosx-version-min=10.9'])]
 
 
 setup(name = package_base, version = package_version, packages = ['tetris_cpp'],
