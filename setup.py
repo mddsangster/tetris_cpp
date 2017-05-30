@@ -18,7 +18,7 @@ ext_modules = [
             'row_pool.cpp'
         ],
         include_dirs = ['.'],
-        extra_compile_args=['-std=c++03', '-v', '-mmacosx-version-min=10.9'])]
+        extra_compile_args=['-std=c++11', '-v', '-mmacosx-version-min=10.9'])]
 
 
 setup(name = package_base, version = package_version, packages = ['tetris_cpp'],
